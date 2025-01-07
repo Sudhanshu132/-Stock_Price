@@ -72,7 +72,7 @@ Interval: The time interval for the data (daily or intraday).
 Parsing and Cleaning
 The fetched JSON data is converted into a Pandas DataFrame for easier analysis and visualization. Columns are renamed for readability, and the index is sorted by date.
 
-#Visualization
+# Visualization
 Matplotlib Line Chart: A simple line chart to show closing prices over time.
 
 Plotly Candlestick Chart: An interactive candlestick chart displaying open, high, low, and close prices.
@@ -82,7 +82,7 @@ The script fetches the entire dataset (outputsize=full). For smaller datasets, u
 
 Ensure the key.txt file contains a valid Alpha Vantage API key to avoid errors.
 
-#Troubleshooting
+# Troubleshooting
 Invalid API Key: Check the contents of key.txt and ensure the API key is correct.
 
 Unsupported Symbol: Verify the stock ticker symbol is valid and supported by Alpha Vantage.
