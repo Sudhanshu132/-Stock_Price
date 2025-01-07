@@ -1,10 +1,9 @@
-# -Stock_Price
-Stock Data Fetching and Visualization
+## Stock Data Fetching and Visualization
 
-Overview
+## Overview
 This project is a Python script to fetch stock market data using the Alpha Vantage API and visualize it using Matplotlib and Plotly. The script supports fetching both daily and intraday stock data and provides tools for analyzing and visualizing stock price trends.
 
-Features
+## Features
 Fetch stock market data (daily or intraday) for a given symbol using the Alpha Vantage API.
 
 Parse and clean the retrieved data into a Pandas DataFrame.
@@ -13,7 +12,7 @@ Plot stock closing prices using Matplotlib.
 
 Create interactive candlestick charts using Plotly.
 
-Prerequisites
+## Prerequisites
 Libraries
 The following Python libraries are required:
 
@@ -27,12 +26,12 @@ matplotlib
 
 plotly
 
-API Key
+# API Key
 You will need an API key from Alpha Vantage to access the stock market data. Store the API key in a file named key.txt in the following format:
 
 { "TWITTER_SECRET": "your_alpha_vantage_api_key" }
 
-Usage
+# Usage
 Step 1: Prepare the Environment
 
 Install the required Python libraries if not already installed:
@@ -61,7 +60,7 @@ A line chart of the stock's closing prices will be shown using Matplotlib.
 
 An interactive candlestick chart will be displayed using Plotly in your web browser.
 
-Code Explanation
+# Code Explanation
 Fetching Data
 
 The fetch_stock_data function retrieves stock data using the Alpha Vantage API. It supports the following:
@@ -73,17 +72,17 @@ Interval: The time interval for the data (daily or intraday).
 Parsing and Cleaning
 The fetched JSON data is converted into a Pandas DataFrame for easier analysis and visualization. Columns are renamed for readability, and the index is sorted by date.
 
-Visualization
+#Visualization
 Matplotlib Line Chart: A simple line chart to show closing prices over time.
 
 Plotly Candlestick Chart: An interactive candlestick chart displaying open, high, low, and close prices.
 
-Notes
+#Notes
 The script fetches the entire dataset (outputsize=full). For smaller datasets, update the parameter to outputsize=compact.
 
 Ensure the key.txt file contains a valid Alpha Vantage API key to avoid errors.
 
-Troubleshooting
+#Troubleshooting
 Invalid API Key: Check the contents of key.txt and ensure the API key is correct.
 
 Unsupported Symbol: Verify the stock ticker symbol is valid and supported by Alpha Vantage.
